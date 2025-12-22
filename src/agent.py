@@ -1,18 +1,9 @@
-# Agent class with properties like strategy, score, and history
-
-# Methods for choosing moves based on strategy
-
-# Define the Agent class which represents a player in the simulation
 # Define the Agent class which represents a player in the simulation
 import random 
 
 class Agent:
     def __init__(self, name, strategy="cooperate"):
-        """
-        Initialize a new agent.
-        :param name: string, the name of the agent
-        :param strategy: string, initial fixed strategy ("cooperate" or "defect")
-        """
+        # Initialize a new agent
         self.name = name              # Save the agent's name
         self.strategy = strategy      # Save the agent's chosen strategy
         self.score = 0                # Initialize the agent's score to 0
@@ -21,22 +12,29 @@ class Agent:
     def choose_move(self, opponent):
     
         # Always cooperate
-        if self.strategy == "always_cooperate":
+        if self.strategy.lower() == "always cooperate":
             return "cooperate"
 
         # Always defect
-        elif self.strategy == "always_defect":
+        elif self.strategy.lower() == "always defect":
             return "defect"
+        
+        # Defect unless both agents defect
+        elif self.strategy.lower() == "cooperate for defect":
+            if "defect" in opponent.history:
+                return "cooperate"
+            else:
+                return "defect"
             
         # Cooperates first, then permanently defects if opponent defects
-        elif self.strategy == "grim":
+        elif self.strategy.lower() == "grim":
             if "defect" in opponent.history:
                 return "defect"
             else:
                 return "cooperate"
 
         # Tit-for-Tat strategy
-        elif self.strategy == "tit_for_tat":
+        elif self.strategy.lower() == "tit for tat":
             # First move: cooperate
             if not opponent.history:
                 return "cooperate"
@@ -44,13 +42,13 @@ class Agent:
             return opponent.history[-1]
             
         # Suspicious Tit-for-Tat strategy
-        elif self.strategy == "stft":
+        elif self.strategy.lower() == "stft":
             if not opponent.history:
                 return "defect"
             return opponent.history[-1]
         
         # Random moves
-        elif self.strategy == "random":
+        elif self.strategy.lower() == "random":
             # Randomly pick "cooperate" or "defect"
             return random.choice(["cooperate", "defect"])
             
@@ -60,3 +58,4 @@ class Agent:
             raise ValueError(f"Unknown strategy: {self.strategy}")
 
         return self.strategy
+

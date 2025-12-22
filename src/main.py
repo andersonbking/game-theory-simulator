@@ -9,6 +9,7 @@ from game import Game
 import random
 
 print("Game Theory Simulation by Anderson")
+print("Prisoner's Dilemma Version")
 print()
 
 def main():

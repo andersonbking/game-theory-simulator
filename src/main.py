@@ -15,7 +15,7 @@ def main():
     """
     Main function to run a simple simulation.
     """
-    choice1 = input("What strategy would you like John to perform? ".strip())
+    choice1 = input("What strategy would you like John to perform? ")
     choice2 = input("What strategy would you like Bob to perform? ")
     choices = [choice1, choice2]
 
@@ -31,7 +31,6 @@ def main():
     times = int(input("How many rounds? "))
     print()
     
-    # Print the moves and updated scores
     count = 0
     
     while count < times:

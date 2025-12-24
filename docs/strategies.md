@@ -28,3 +28,10 @@ Here is a list of the implemented strategies you can choose to run in the simula
     
    Randomly chooses to defect or cooperate.
 
+8. Two Tits for Tat (aka. 2tft)
+
+   It defects twice after being defected against, otherwise cooperating.
+
+9. Gradual
+
+   Increasingly adds to a string of defections if the opponent continues to defect, then will cooperate once the string      is finished.

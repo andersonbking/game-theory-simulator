@@ -1,15 +1,9 @@
-# Runs simulation loop
-
-# Creates agents and game instances
-
-# Prints results to the terminal
-
 from agent import Agent
 from game import Game     
 import random
 
-print("Game Theory Simulation by Anderson")
-print("Prisoner's Dilemma Version")
+print("Game Theory Simulation Demo by Anderson")
+print("Iterated Prisoner's Dilemma Edition")
 print()
 
 def main():

@@ -19,6 +19,9 @@ strategies = [
 # Initialize cumulative scores
 scores = {strategy: 0 for strategy in strategies}
 
+print("Iterated Prisoner's Dilemma Tournament by Anderson")
+print()
+
 # Number of rounds per match
 NUM_ROUNDS = int(input("Number of rounds: "))
 print()

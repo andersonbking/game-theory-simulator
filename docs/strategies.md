@@ -1,3 +1,5 @@
+# Strategies
+
 Here is a list of the implemented strategies you can choose to run in the simulation:
 
 1. Cooperate

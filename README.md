@@ -10,7 +10,7 @@ A simulation framework for studying strategic interaction between agents using f
 - [Contact](#contact)
 
 ## Overview
-The Game Theory Simulator allows modeling interactions between agents in scenarios such as the Prisoner's Dilemma
+The Game Theory Simulator allows modeling interactions between agents in scenarios such as the Prisoner's Dilemma.
 
 **Goals:**
 - Model strategic interactions programmatically
@@ -18,38 +18,39 @@ The Game Theory Simulator allows modeling interactions between agents in scenari
 - Visualize results clearly
 - Encourage reproducible experiments
 
----
 
 ## Features
-- Prisoner's Dilemma
-- Multiple agent strategies:
-Cooperate, defect, tit-for-tat, suspicious tit-for-tat, random, & grim/permanent retaliation
+- Prisoner's Dilemma demo
+- Round robin tournament
+- Nine agent strategies:
+Cooperate, defect, tit-for-tat, suspicious tit-for-tat, random, two tits for tat, gradual, & grim/permanent retaliation
 - Extendable for new games or strategies
 - Choose the Agents' strategies and the number of rounds played
 
----
 
-## Usage
+## Usage for demo.py
 - Make predictions
 - Enter the strategy for each of the two agents
 - Analyze the results
-- Learn from the data
 
----
+## Usage for tournament.py
+- Predict which strategy will win for the number of rounds
+- Enter the number of rounds the agents will play against each other
+- Analyze the results
+
+
 
 ## Future work
 - Add more strategies
-- Add more agents to the simulation
 - Statistical analysis tools
 - Visualization -> first with 2d; possibly 3d later
 - Web-based interactive version
 
----
 
 ## License
 This project is licensed under the MIT License.
 
----
+
 
 ## Contact
 For questions or contributions, reach out via GitHub or email: andersonbking2011@gmail.com
@@ -59,4 +60,3 @@ For questions or contributions, reach out via GitHub or email: andersonbking2011
 Clone the repository:
 ```bash
 git clone https://github.com/andersonbking/game-theory-simulator.git
-

@@ -1,5 +1,5 @@
 # game-theory-simulator
-A simulation framework for studying strategic interaction between agents using formal game theory models, with an emphasis on clarity, reproducibility, and visualization.
+A simulation framework for studying strategic interaction between agents using formal game theory models, with an emphasis on clarity, reproducibility, and visualization. The tournament uses a round-robin structure with self-play included, where each matchup consists of a configurable number of repeated rounds to allow strategy memory and retaliation to emerge.
 
 ## Table of Contents
 - [Overview](#overview)

@@ -26,8 +26,7 @@ print()
 NUM_ROUNDS = int(input("Number of rounds: "))
 print()
 
-# Round-robin tournament (no self-play; change itertools.combinations to itertools.product for self-play)
-for strat_a, strat_b in itertools.product(strategies, repeat=2):
+for strat_a, strat_b in itertools.combinations_with_replacement(strategies, 2):
     # Instantiate agents
     agent_a = Agent(name=strat_a, strategy=strat_a)
     agent_b = Agent(name=strat_b, strategy=strat_b)
